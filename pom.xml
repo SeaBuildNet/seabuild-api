@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>net.seabuild</groupId>
+    <artifactId>seabuild-api</artifactId>
+    <version>1.0.0</version>
+
+    <properties>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <repositories>
+        <repository>
+            <id>flammenfuchs-repo-public</id>
+            <name>Flammenfuchs_YT's Repository</name>
+            <url>https://repo.flammenfuchs.de/public</url>
+        </repository>
+        <repository>
+            <id>spigot-repo</id>
+            <url>https://hub.spigotmc.org/nexus/content/repositories/snapshots/</url>
+        </repository>
+        <repository>
+            <id>minecraft-repo</id>
+            <url>https://libraries.minecraft.net/</url>
+        </repository>
+        <repository>
+            <id>smashmc-public</id>
+            <url>https://repo.smashmc.eu/public</url>
+        </repository>
+    </repositories>
+
+    <dependencies>
+        <!-- > Minecraft Dependencies Libs etc. (scope=provided)</-->
+        <dependency>
+            <groupId>org.spigotmc</groupId>
+            <artifactId>spigot-api</artifactId>
+            <version>1.20.1-R0.1-SNAPSHOT</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <!-- > Shared Libs etc. (scope=compiled)</-->
+        <dependency>
+            <groupId>de.flammenfuchs</groupId>
+            <artifactId>injections</artifactId>
+            <version>1.3.0</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>de.flammenfuchs</groupId>
+            <artifactId>spigot-lib</artifactId>
+            <version>1.0.0</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>de.liquiddev</groupId>
+            <artifactId>commands</artifactId>
+            <version>1.3.0</version>
+            <scope>compile</scope>
+        </dependency>
+
+        <!-- > Project Libs etc. (scope=provided)</-->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.28</version>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
+
+    <distributionManagement>
+        <repository>
+            <id>flammenfuchs-repo-public</id>
+            <name>Flammenfuchs_YT's Repository</name>
+            <url>https://repo.flammenfuchs.de/public</url>
+        </repository>
+    </distributionManagement>
+
+</project>

@@ -10,7 +10,6 @@ This is the global api for all network related plugins for SeaBuild.net
   - [Register a Component](#register-a-component)
 - [Additional Annotations for Injections](#additional-annotations-for-injections)
   - [@Component](#component)
-  - [@Listener](#listener)
   - [@Scheduler](#scheduler)
   - [@SubCommand](#subcommand)
 ## Dependency
@@ -77,16 +76,6 @@ As stated in above, this annotation is used to register Components automatically
 #### Paramenters:
 **value** *(needed)***:** <br>
 The class of the implemented component
-
-### @Listener
-Methods annotated with @Listener are executed when a defined Event is called
-```
-@Listener(ExampleEvent.class)
-```
-#### Paramenters:
-**value** *(needed)***:** <br>
-The class of the Event<p>
-**The method needs to have 1 parameter, the event itself.**
 
 ### @Scheduler
 Methods annotated with @Scheduler are executed in a scheduler

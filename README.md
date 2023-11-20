@@ -39,7 +39,7 @@ maven {
 implementation("net.seabuild:seabuild-api:%VERSION%")
 ```
 ## Components
-Components are used to access parts of the api
+Components are used to access parts of the api. Every component has to implement `ApiComponent`
 ### Get a Component
 #### Manually:
 ```

@@ -1,6 +1,7 @@
 package net.seabuild.api.annon;
 
 import de.liquiddev.command.adapter.bukkit.PlayerCommand;
+import net.seabuild.api.ApiComponent;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
@@ -11,5 +12,5 @@ import java.lang.annotation.Target;
 @Target(ElementType.TYPE)
 public @interface Component {
 
-    Class<? extends PlayerCommand> value();
+    Class<? extends ApiComponent> value();
 }

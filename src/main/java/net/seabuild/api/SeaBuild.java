@@ -13,7 +13,7 @@ public class SeaBuild {
      * @return the component, null if not found
      * @param <T> type of component
      */
-    public static <T> T getComponent(Class<T> clazz) {
+    public static <T extends ApiComponent> T getComponent(Class<T> clazz) {
         if (components.containsKey(clazz)) {
             return clazz.cast(components.get(clazz));
         }
@@ -27,7 +27,7 @@ public class SeaBuild {
      * @param object instance of component
      * @param <T> type of component
      */
-    public static <T> void putComponent(Class<T> clazz, T object) {
+    public static <T extends ApiComponent> void putComponent(Class<T> clazz, T object) {
         components.put(clazz, object);
     }
 

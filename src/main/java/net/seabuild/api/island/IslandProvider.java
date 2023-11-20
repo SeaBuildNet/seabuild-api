@@ -1,12 +1,13 @@
 package net.seabuild.api.island;
 
+import net.seabuild.api.ApiComponent;
 import org.bukkit.Location;
 import org.bukkit.entity.Player;
 
 import java.util.Collection;
 import java.util.UUID;
 
-public interface IslandProvider {
+public interface IslandProvider extends ApiComponent {
 
     /**
      * Get an island by their id
